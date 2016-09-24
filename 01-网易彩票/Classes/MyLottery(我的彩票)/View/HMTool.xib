@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HMTool">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wa-Sw-fRh">
+                    <rect key="frame" x="8" y="4.5" width="46" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="TZC-Kl-92w"/>
+                        <constraint firstAttribute="height" constant="35" id="fy3-Bf-c7I"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="clickSure:" destination="iN0-l3-epB" eventType="touchUpInside" id="U5k-lc-Q0N"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOk-GA-n4z">
+                    <rect key="frame" x="266" y="4" width="46" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Cph-eN-ixc"/>
+                        <constraint firstAttribute="width" constant="46" id="cIW-Bk-L0e"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="clickCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="mGT-Ig-A39"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.79220042270000002" green="0.276463921" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8Wa-Sw-fRh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="30t-vm-xF8"/>
+                <constraint firstItem="yOk-GA-n4z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dsA-lR-XK9"/>
+                <constraint firstItem="8Wa-Sw-fRh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eOY-NB-wUO"/>
+                <constraint firstAttribute="trailing" secondItem="yOk-GA-n4z" secondAttribute="trailing" constant="8" id="zfw-kb-uWi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="222" y="280"/>
+        </view>
+    </objects>
+</document>

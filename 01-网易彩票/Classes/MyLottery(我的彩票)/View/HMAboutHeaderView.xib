@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="j38-n7-9Nr">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_logo" translatesAutoresizingMaskIntoConstraints="NO" id="GnL-lC-2T7">
+                    <rect key="frame" x="55" y="8" width="211" height="67"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号:4.1 build 391" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-ce-i1B">
+                    <rect key="frame" x="55" y="83" width="127.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8fZ-ce-i1B" firstAttribute="top" secondItem="GnL-lC-2T7" secondAttribute="bottom" constant="8" id="5sa-Qc-JYn"/>
+                <constraint firstItem="8fZ-ce-i1B" firstAttribute="leading" secondItem="GnL-lC-2T7" secondAttribute="leading" id="efb-IO-vzg"/>
+                <constraint firstItem="GnL-lC-2T7" firstAttribute="centerX" secondItem="j38-n7-9Nr" secondAttribute="centerX" id="kSf-h9-pUF"/>
+                <constraint firstItem="GnL-lC-2T7" firstAttribute="top" secondItem="j38-n7-9Nr" secondAttribute="top" constant="8" id="r5D-mE-r12"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="440" y="306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_logo" width="211" height="67"/>
+    </resources>
+</document>
